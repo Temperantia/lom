@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import { Login } from './views';
-
-import './styles/app.sass';
-import './styles/login.sass';
+import { App } from 'App';
 
 /*
 class Home extends Component {
@@ -46,19 +42,6 @@ function Topics({ match }) {
   );
 }
 */
-
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div>
-          <Route exact path="/" component={Login} />
-          <Route path="/home" component={Login} />
-        </div>
-      </Router>
-    );
-  }
-}
 
 /*
 function Header() {
